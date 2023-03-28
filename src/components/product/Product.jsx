@@ -2,6 +2,10 @@ import React from 'react';
 import './Product.css'
 const Product = (props) => {
     const {img, name, seller, ratings, price}= props.product;
+    //button click korla one lakha pabo
+    const handlerAddCard = props.handlerAddCard;
+
+
     return (
         <div className='product'>
             <img src={img} alt="" />
@@ -11,7 +15,7 @@ const Product = (props) => {
                 <p>Manufacturer: {seller}</p>
                 <p>Rating: {ratings} Stars</p>
             </div>
-            <button className='Product-btn'>Add To Card</button>
+            <button onClick={()=> handlerAddCard(props.product)} className='Product-btn'>Add To Card</button>
         </div>
     );
 };

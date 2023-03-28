@@ -13,7 +13,9 @@ useEffect(()=>{
 },[])
 
 
-
+const handlerAddCard = (product) =>{
+    console.log(product)
+}
 
     return (
         <div className='Shoping-container'>
@@ -32,6 +34,7 @@ useEffect(()=>{
                 product.map(product => <Product 
                 key={product.id}
                 product={product}
+                handlerAddCard={handlerAddCard}
                 ></Product> )
                 }
             </div>
