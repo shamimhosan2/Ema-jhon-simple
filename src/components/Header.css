@@ -12,6 +12,6 @@ nav.Header a{
     color: white;
     margin-left: 30px;
 }
-nav ,.Header a:hover{
+nav .Header a:hover{
     color: orange;
 }
