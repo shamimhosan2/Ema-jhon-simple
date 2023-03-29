@@ -19,6 +19,7 @@ const handlerAddCard = (product) =>{
   const newCart =[...cart, product];
   setCart(newCart)
 }
+///////////
 
     return (
         <div className='Shoping-container'>
